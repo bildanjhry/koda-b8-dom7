@@ -1,5 +1,5 @@
 async function getData(params) {
-    let apiUrl = "https://rickandmortyapi.com/api/character?nam=rick"
+    let apiUrl = "https://rickandmortyapi.com/api/character"
     if(params){
       apiUrl = `https://rickandmortyapi.com/api/character?name=${params}`
     }

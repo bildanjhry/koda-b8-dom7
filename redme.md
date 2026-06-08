@@ -3,4 +3,7 @@
 #### Menampillkan list dari karakter Rick & Morty menggunakan fetch API
 
 ### Preview Demo:
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
+
+### Preview Demo pencarian lewat search:
+![alt text](assets/image.png)

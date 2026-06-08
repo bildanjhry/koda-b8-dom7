@@ -1,14 +1,13 @@
+const listSet = document.querySelector(".data-wrapper > .data-list")
+const inputForm = document.querySelector(".input-search-form")
+
 async function getData(params) {
     let apiUrl = "https://rickandmortyapi.com/api/character"
-    if(params){
-      apiUrl = `https://rickandmortyapi.com/api/character?name=${params}`
-    }
+    if(params) apiUrl = `https://rickandmortyapi.com/api/character?name=${params}`
     const req = await fetch(apiUrl)
     const data = await req.json()
     return data
 }
-
-const listSet = document.querySelector(".data-wrapper > .data-list")
 
 async function createCard (query){
     const data = await getData(query)
@@ -39,12 +38,11 @@ async function createCard (query){
     })
 }
 
-const inputForm = document.querySelector(".input-search-form")
 inputForm.addEventListener("submit", function(element) {
     element.preventDefault()
     const inputValue = document.querySelector(".input-name")
     const query = inputValue.value
-    createCard(query)
+    if(query) createCard(query)
 })
 
 createCard()

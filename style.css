@@ -44,8 +44,13 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
+    cursor: pointer;
     background-color: rgb(44, 44, 44);
     color: white;
+}
+
+.data-wrapper > .input-search-form > button:hover { 
+    background-color: rgba(44, 44, 44, 0.779);
 }
 
 .data-wrapper > .data-list {
@@ -84,11 +89,9 @@ body {
 .data-wrapper > .data-list > div > div > h5 {
     line-height: 15px;
     font-size: 16px;
-}
-
-.data-wrapper > .data-list > div > div > h5, p {
     margin: 0;
 }
+
 
 .data-wrapper > .data-list > div > img {
     width: 100%;
